@@ -13,6 +13,8 @@
 #git remote show origin #查看当前仓库基本信息
 #git remote -v #查看项目远程地址
 #git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
+#git remote rm origin #删除远程配置
+#git remote add origin https://github.com/WebCrawlers.git #重新配置git远程地址
 
 #上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP，该文件与原MASTER分支是独立的）
 #1.Git init #在本地工程目录下,生成.git 文件夹
