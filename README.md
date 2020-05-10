@@ -16,6 +16,11 @@
 #git remote rm origin #删除远程配置
 #git remote add origin https://github.com/WebCrawlers.git #重新配置git远程地址
 
+#撤销操作
+#1.git status #先看一下add 中的文件
+#2.git reset HEAD #如果后面什么都不跟的话 就是上一次add 里面的全部撤销了 
+#3.git reset HEAD XXX/XXX/XXX.java #就是对某个文件进行撤销了
+
 #上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP，该文件与原MASTER分支是独立的）
 #1.Git init #在本地工程目录下,生成.git 文件夹
 #2.git add * #上传修改的文件,*可替换成具体要上传的文件名，*表示提交所有有变化的文件
