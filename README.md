@@ -7,3 +7,4 @@
 #step 5:git commit -m "first commit" #添加本次提交的注释，双引号中的字符自定义修改.
 #step 6:git push #提交代码到远程git仓库
 
+#git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
