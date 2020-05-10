@@ -16,6 +16,9 @@
 #git remote rm origin #删除远程配置
 #git remote add origin https://github.com/WebCrawlers.git #重新配置git远程地址
 
+#git add -u: 把所有tracked文件中被修改过或已删除文件的信息添加到索引库。它不会处理untracted的文件。
+#git add -A: 表示把中所有tracked文件中被修改过或已删除文件和所有untracted的文件信息添加到索引库。
+
 #撤销操作
 #1.git status #先看一下add 中的文件
 #2.git reset HEAD #如果后面什么都不跟的话 就是上一次add 里面的全部撤销了 
