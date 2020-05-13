@@ -12,6 +12,12 @@
 #step2:git add remote add origin https://github.com/qjx1122/iMX6ul_uboot.git
 #step3:git push origin master
 
+#利用ssh上传本地项目到GitHub仓库
+#1.ssh-keygen -t rsa -C “any comment can be here”		
+#-C = 用于识别这个密钥的注释 ，可以是任何内容(comment to identify the key)
+#-t = 密钥的类型(The type of the key to generate),这里参数值是 rsa
+#2.复制/root/.ssh/id_rsa.pub公钥内容设置到github中
+
 #push 操作
 #git push <远程主机名> <本地分支名>:<远程分支名>
 #git push origin master #将本地的master分支推送到origin主机的master分支。如果后者不存在，则会被新建。
