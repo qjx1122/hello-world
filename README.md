@@ -59,10 +59,22 @@ postBuffer = 524288000
 #git add -u: 把所有tracked文件中被修改过或已删除文件的信息添加到索引库。它不会处理untracted的文件。
 #git add -A: 表示把中所有tracked文件中被修改过或已删除文件和所有untracted的文件信息添加到索引库。
 
+#清除本地缓存提交
+#1.git rm -r --cached ./
+#2.git add .
+#3.git commit -m 'delete ./'
+#4.git push -u origin master -f	#强制提交
+
 #撤销操作
 #1.git status #先看一下add 中的文件
 #2.git reset HEAD #如果后面什么都不跟的话 就是上一次add 里面的全部撤销了 
 #3.git reset HEAD XXX/XXX/XXX.java #就是对某个文件进行撤销了
+
+#git reflog #查看项目中的commits
+#git reset –hard commit1 #撤销到commit1版本
+
+#git add 文件夹/          #添加整个文件夹及内容
+#git add *.文件类型       #添加目录中所有此文件类型的文件
 
 #上传一个独立的分支（比如代码是从工程中直接DOWNLOAD ZIP，该文件与原MASTER分支是独立的）
 #1.git init #在本地工程目录下,生成.git 文件夹
